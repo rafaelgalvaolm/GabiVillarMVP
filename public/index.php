@@ -1,12 +1,15 @@
 <?php
 $request = $_SERVER['REQUEST_URI'];
 
-switch ($_request) {
+switch ($request) {
     case '/' :
-        require __DIR__ . '/views/home.php';
+        require __DIR__ . '/views/home/home.php';
         break;
     case '' :
-        require __DIR__ . '/views/home.php';
+        require __DIR__ . '/views/home/home.php';
+        break;
+    case '/login' :
+        require __DIR__ . '/views/login/login.php';
         break;
     default:
         http_response_code(404);
