@@ -1,0 +1,32 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.body-background {
+    background-image: url('your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #ffffffee;
+}
+
+.login-card .card-img-top{
+    width: 400px;
+    margin-right: 10px !important;
+}
+
+.login-card .btn.btn-primary {
+    margin-top : 40px;
+}
+
+@media (max-width: 768px) {
+    .login-card {
+        margin: 20px;
+    }
+}
